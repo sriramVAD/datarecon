@@ -6,5 +6,5 @@ import os
 import sys
 import pandas as pd
 
-path = "~/afs/datarecon/SpotifySongAnalysis/SpotifySongAttribs.csv"
+path = "/home/sriram/Documents/repo/datarecon/SpotifySongAnalysis/SpotifySongAttribs.csv"
 data = pd.read_csv(path)
