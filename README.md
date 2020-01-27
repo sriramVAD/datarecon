@@ -7,3 +7,8 @@ This repository will contain files on transforming datasets, visualization, and 
     Using the metadata provided by spotify's API on kaggle, various features like 
     acousticness, danceability, etc. can be visualized and potentially transformed for 
     usable analysis.
+
+## Notes available 
+* ### Fourier Series
+* ### Improper Integrals
+* ### Inner Product Spaces
