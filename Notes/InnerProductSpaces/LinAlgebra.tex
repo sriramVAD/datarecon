@@ -68,4 +68,41 @@ $\{ \forall x \in E, \forall y \in A, <x,y> = 0\}$ where $A \subset E$\\
     \item $A^{\perp} = $ $span(A)^{\perp}$
     \item $A \cap A^{\perp} \subset \{ 0 \} $
 \end{itemize}
+\\
+\section{Orthonormal sets}
+\textbf{Definition}\\
+Let $(E, <,>)$ be an inner product space on $ R $ and $ X = \{ x_{1}, x_{2}, .. x_{n} \} \subset E $. And $ B = \{ e_{1}, e_{2}, .. e_{n} \} $ a basis of E. we say that X is an orthonormal set in E if:\\
+$ <x_{i}, x_{j}> = \delta_{ij} $ and\\
+$ <e_{i}, e_{j}> \geq \delta_{ij} $\\
+$ \delta_{ij} = 1 $ if $ i = j $\\
+$ \delta_{ij} = 0 $ if $ i \neq j $\\
+\\
+\textbf{Proposition 7:} Any orthogonal set / family of vectors of non-zero vectors from an inner product space is linearly independent.\\
+\\
+\section{Gram-Schmidt Theorem}
+Let $ (E, <,>) $ be a eucledian space and $ B = \{ e_{1}, e_{2}, ... , e_{n} \} $ a basis of E. Then there exists an orthogonal basis $ O = \{ f_{1}, f_{2}, ... f_{n} \} $ from E. such that $ \forall k \in [1, n] $, $ f_{k} \in span(B) $.
+\\
+\section{Theorem of orthogonal supplementary}
+Let $ (E, <,>) $ be a eucledian space and `F' a sub-vector space of E, then:\\
+$ E = F \oplus F^{\perp} $\\
+\textbf{Corollary:} $ F^{\perp \perp} = F $, only in a eucledian space, i.e, Finite dimension.\\
+\\
+\section{Orthogonal Projections}
+\textbf{Definition}\\
+Let $ (E, <,>) $ be a eucledian space and F a sub-vector space of E. We call orthogonal projector on `F' and we denote $ P_{F} $ the projector on F parallel to $ F^{\perp} $ i.e.,
+$ P_{F} \in L(E) $ such that:\\
+$ P_{F} ^ 2 = P_{F} $, and $ Im(F) = F $ and $ ker(F) = F^{\perp} $\\
+\textbf{Proposition:} $ \forall x \in E $\\
+
+$ P_{F} (x) = $ $ \displaystyle\sum_{i=1}^{n}  <x,e_{i}>\cdot e_{i} $\\
+\section{Distance to a subspace}
+\textbf{Proposition:} Let F be a sub-vector space of a eucledian space $ (E, <,>) $. Then, the map:\\
+$ y \Rightarrow \left\lVert x - y \right\rVert $ $ \forall x \in E $ reaches it's minimum value at $ P_{F} (x) $.\\
+We call distance of x to F and denote $ d(x, F) $ the real number: $ \left\lVert x - P_{F} (x) \right\rVert $.\\
+\\
+\section{Extra remarks}
+\begin{itemize}
+    \item If F is of finite dimension, then $ E = F \oplus F^{\perp} $
+    \item if E is finite, $ F^{\perp \perp } = F $, but if it's not, then $ F \subset F^{\perp \perp} $
+\end{itemize}
 \end{document}
